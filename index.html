@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="1">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet">
+    <style>
+      *,
+      *::after,
+      *::before {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+         font-family: 'Red Hat Display';
+      }
+
+      body{
+        background-color: var(--Blue-100);
+      }
+      :root {
+        /* ## Colors */
+
+        /* ### Primary */
+
+        --Blue-100: hsl(225, 100%, 94%);
+        --Blue-700: hsl(245, 75%, 52%);
+
+        /* ### Neutral */
+
+        --Blue-50: hsl(225, 100%, 98%);
+        --Gray-600: hsl(224, 23%, 55%);
+        --Blue-950: hsl(223, 47%, 23%);
+
+        /* ## Typography */
+
+        /* ### Body Copy */
+
+        --Font-size-paragraph: 16px;
+
+        /* ### Font */
+        --Weights-500: 500;
+        --Weights-700: 700;
+        --Weights-900: 900;
+      }
+
+      .fon{
+        width: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+      .fon-card{
+        background-color: var(--Blue-100);
+        height: 100vh;
+      }
+      
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      main {
+        width: 450px;
+        background-color: white;
+        border-radius: 20px;
+      }
+
+      .title-image {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+
+      .title{
+        color: var(--Blue-950);
+        font-weight: 900;
+        font-size: 28px;
+        margin-top: 40px;
+      }
+
+      .title-content{
+        font-size: var(--Font-size-paragraph);
+        color: var(--Gray-600);
+        font-weight: 500;
+        line-height: 1.7;
+        margin: 20px;
+        padding-inline: 50px;
+      }
+
+      .info{
+        background-color: var(--Blue-50);
+        width: 350px;
+        height: 100px;
+        margin: auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        margin-bottom:10px;
+      }
+
+         .info-card{
+          display: flex;
+flex-direction: row;
+align-items: center;
+         }
+      
+      .music {
+        width: 50px;
+        border-radius: 50%;
+      }
+
+      .money-name{
+        color: var(--Blue-950);
+        font-weight: 900;
+        width: 120px;
+      }
+      .money{
+        color: var(--Gray-600);
+      }
+
+      .link{
+        color: var(--Blue-700);
+      }
+      
+
+      .main-content {
+        margin: auto;
+      }
+
+      .button-accept{
+        width: 350px;
+        text-align: center;
+        align-items: center;
+        background-color: var(--Blue-700);
+        margin: 20px;
+        border-radius: 10px;
+        height: 50px;
+        color: white;
+        font-size: var(--Font-size-paragraph);
+        font-weight: 700;
+        border: 0;
+        box-shadow: 5px 5px 30px  var(--Blue-700);
+      }
+      .button-cancel{
+        width: 350px;
+        text-align: center;
+        align-items: center;
+        color: var(--Gray-600);
+        font-size: var(--Font-size-paragraph);
+        height: 50px;
+        border: 0;
+        background: none;
+        font-weight: 700;
+        margin-top: 10px;
+        margin-bottom: 40px;
+      }
+
+      a:hover{
+        text-decoration: none;
+        color: var(--Gray-600);
+      } .button-accept:hover{
+        background-color: var(--Gray-600);
+        cursor: pointer;
+      }
+      .button-cancel:hover{
+        color: var(--Blue-950);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+<img class="fon" src="images/pattern-background-desktop.svg" alt="">
+
+    
+    
+    <div>
+      <main>
+
+        <section class="image">
+          <img class="title-image" src="images/illustration-hero.svg" alt="">
+        </section>
+
+        <section class="main-content">
+          <h1 class="title">Order Summary</h1>
+          <p class="title-content">You can now listen to millions of songs, audiobooks, and podcasts on any device
+            anywhere you like!</p>
+        </section>
+
+        <section class="info">
+          <section class="info-card">
+          <img class="music" src="images/icon-music.svg" alt="">
+          <section class="money-col">
+            <h4 class="money-name">Annual Plan</h4>
+            <p class="money">$59.99/year</p>
+        </section></section>
+        <section class="link">
+          <a href="">Change</a>
+        </section></section>
+        
+
+        <section class="buttons">
+          <button class="button-accept">Proceed to Payment</button>
+          <button class="button-cancel">Cancel Order</button>
+        </section>
+
+      </main>
+    </div>
+  </body>
+
+</html>
